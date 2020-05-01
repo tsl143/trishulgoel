@@ -1,0 +1,31 @@
+a {
+  box-shadow: none;
+}
+
+.linksHolder a {
+  margin-right: 15px;
+  vertical-align: middle;
+}
+
+
+.socialIcon {
+  display: inline-block;
+  filter: grayscale(90%);
+	height: 20px;
+	background-size: cover;
+  vertical-align: middle;
+	width: 20px;
+}
+
+
+.linksHolder a:hover .socialIcon{
+  filter: grayscale(0);
+}
+
+.twitter {
+  background-image: url(/twitter.png);
+}
+
+.github {
+  background-image: url(/github.png);
+}

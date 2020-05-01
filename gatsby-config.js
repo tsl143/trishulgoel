@@ -1,5 +1,4 @@
 module.exports = {
-  pathPrefix: "/trishulgoel",
   siteMetadata: {
     title: `Trishul Goel`,
     author: `Trishul`,
@@ -58,10 +57,9 @@ module.exports = {
         background_color: `#ffffff`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `content/assets/gatsby-icon.png`,
+        icon: `content/assets/favicon.png`,
       },
     },
-    `gatsby-plugin-offline`,
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-plugin-typography`,

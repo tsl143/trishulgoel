@@ -1,4 +1,7 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Trishul Goel]]></title><description><![CDATA[Trishul Goel]]></description><link>https://trishulgoel.com</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 01 May 2020 10:28:03 GMT</lastBuildDate><item><title><![CDATA[Get list of all global npm packages installed]]></title><description><![CDATA[Sometimes I get conflicts in path and get confused between globally and locally installed npm packages. So I need to find out what packages…]]></description><link>https://trishulgoel.com/get-list-of-global-npm-packages-installed/</link><guid isPermaLink="false">https://trishulgoel.com/get-list-of-global-npm-packages-installed/</guid><pubDate>Sun, 27 Aug 2017 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Sometimes I get conflicts in path and get confused between globally and locally installed npm packages.&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Trishul Goel]]></title><description><![CDATA[Trishul Goel]]></description><link>https://trishulgoel.com</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 01 Nov 2020 13:58:01 GMT</lastBuildDate><item><title><![CDATA[Chrome DOM element selector ]]></title><description><![CDATA[I discovered a hidden gem in chrome devtools, how to select a DOM element and use it in console as a global variable. This comes super handy…]]></description><link>https://trishulgoel.com/chrome-element-selector/</link><guid isPermaLink="false">https://trishulgoel.com/chrome-element-selector/</guid><pubDate>Sun, 01 Nov 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;I discovered a hidden gem in chrome devtools, how to select a DOM element and use it in console as a global variable. This comes super handy in debugging an application in production&lt;br&gt;
+All I nned to do is select a DOM node from &lt;code class=&quot;language-text&quot;&gt;Inspect element&lt;/code&gt; and if you notice the selected node will be having a prefix in &lt;code class=&quot;language-text&quot;&gt;Inspect element&lt;/code&gt; panel &lt;code class=&quot;language-text&quot;&gt;==$0&lt;/code&gt;, this &lt;code class=&quot;language-text&quot;&gt;$0&lt;/code&gt; means that you can reference this node in the console with the variable &lt;code class=&quot;language-text&quot;&gt;$0&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;video src=&quot;/47fd7653453444240feaea91d856610d/chrome-select-element.mov&quot; autoplay loop controls&gt;&lt;/video&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://developers.google.com/web/tools/chrome-devtools/dom/#current&quot;&gt;Reference&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Get list of all global npm packages installed]]></title><description><![CDATA[Sometimes I get conflicts in path and get confused between globally and locally installed npm packages. So I need to find out what packages…]]></description><link>https://trishulgoel.com/get-list-of-global-npm-packages-installed/</link><guid isPermaLink="false">https://trishulgoel.com/get-list-of-global-npm-packages-installed/</guid><pubDate>Sun, 27 Aug 2017 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Sometimes I get conflicts in path and get confused between globally and locally installed npm packages.&lt;/p&gt;
 &lt;p&gt;So I need to find out what packages I installed globally.&lt;/p&gt;
 &lt;p&gt;I googled it and found out how :P (duhhh) Putting here for my reference or may be others can get too.&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;npm list -g --depth=0&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
@@ -14,29 +17,30 @@
 &lt;p&gt;But there is a workaround adding a bit of javascript. We can play with onfocus event of the BODY element.
 &lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/49700d4f1b76ecdc0631b5cf964ee278/723cd/img1.png&quot;
+    href=&quot;/static/49700d4f1b76ecdc0631b5cf964ee278/65654/img1.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
   &gt;
     &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 22.706422018348622%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAFCAIAAADKYVtkAAAACXBIWXMAAAsSAAALEgHS3X78AAAAp0lEQVQY032OTQ+CMAyG9///jxzcRSJn4SB4kgsiElnUsS+2sllHPBl80rxp2r5tiUCkUForpcZx1FpPH4x1zlnLhuHSNF3XYSn8QLJsT+mWUpqmuyTZlGWV53lRHI7VqT7XjLFr2/Z9j2bcNlk7fQEAIiKc8yXBy/M8e+9RATDAGKO1wRa+tsxIKV9csMeThHWiH/xCiBJCVK8M3O5/zTjnVgDncPUbCmgenW/E1KAAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+    style=&quot;padding-bottom: 22.972972972972975%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAFCAIAAADKYVtkAAAACXBIWXMAAAsSAAALEgHS3X78AAAAp0lEQVQY032OTQ+CMAyG9///jxzcRSJn4SB4kgsiElnUsS+2sllHPBl80rxp2r5tiUCkUForpcZx1FpPH4x1zlnLhuHSNF3XYSn8QLJsT+mWUpqmuyTZlGWV53lRHI7VqT7XjLFr2/Z9j2bcNlk7fQEAIiKc8yXBy/M8e+9RATDAGKO1wRa+tsxIKV9csMeThHWiH/xCiBJCVK8M3O5/zTjnVgDncPUbCmgenW/E1KAAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;File input&quot;
         title=&quot;Handle Cancel Click on File Input&quot;
-        src=&quot;/static/49700d4f1b76ecdc0631b5cf964ee278/799d3/img1.png&quot;
-        srcset=&quot;/static/49700d4f1b76ecdc0631b5cf964ee278/00d96/img1.png 148w,
-/static/49700d4f1b76ecdc0631b5cf964ee278/0b23c/img1.png 295w,
-/static/49700d4f1b76ecdc0631b5cf964ee278/799d3/img1.png 590w,
-/static/49700d4f1b76ecdc0631b5cf964ee278/723cd/img1.png 872w&quot;
+        src=&quot;/static/49700d4f1b76ecdc0631b5cf964ee278/fcda8/img1.png&quot;
+        srcset=&quot;/static/49700d4f1b76ecdc0631b5cf964ee278/12f09/img1.png 148w,
+/static/49700d4f1b76ecdc0631b5cf964ee278/e4a3f/img1.png 295w,
+/static/49700d4f1b76ecdc0631b5cf964ee278/fcda8/img1.png 590w,
+/static/49700d4f1b76ecdc0631b5cf964ee278/65654/img1.png 872w&quot;
         sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
       /&gt;
   &lt;/a&gt;

@@ -6,7 +6,7 @@ tags:
   - javascript
   - oops
   - es5
-show: 'true'
+show: true
 author: trishul
 ---
 Sometimes I get conflicts in path and get confused between globally and locally installed npm packages.

@@ -1,7 +1,6 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 
-import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { rhythm, scale } from "../utils/typography"
@@ -11,7 +10,9 @@ class BlogPostTemplate extends React.Component {
     const post = this.props.data.markdownRemark
     const siteTitle = this.props.data.site.siteMetadata.title
     const { previous, next } = this.props.pageContext
-
+    const isPrevMicro = previous && previous.frontmatter && previous.frontmatter.micro
+    const isNextMicro = next && next.frontmatter && next.frontmatter.micro
+console.log(previous)
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <SEO
@@ -44,9 +45,6 @@ class BlogPostTemplate extends React.Component {
               marginBottom: rhythm(1),
             }}
           />
-          <footer>
-            <Bio />
-          </footer>
         </article>
 
         <nav>
@@ -60,14 +58,14 @@ class BlogPostTemplate extends React.Component {
             }}
           >
             <li>
-              {previous && (
+              {isPrevMicro && (
                 <Link to={previous.fields.slug} rel="prev">
                   ← {previous.frontmatter.title}
                 </Link>
               )}
             </li>
             <li>
-              {next && (
+              {isNextMicro && (
                 <Link to={next.fields.slug} rel="next">
                   {next.frontmatter.title} →
                 </Link>

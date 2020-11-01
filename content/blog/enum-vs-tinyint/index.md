@@ -4,7 +4,7 @@ date: '2015-12-24'
 description: 'enum Vs tinyInt'
 tags:
   - javascript
-show: 'true'
+show: true
 author: trishul
 ---
 

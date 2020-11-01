@@ -4,7 +4,7 @@ date: '2017-03-01'
 description: 'handle-cancel-click-on-file-input'
 tags:
   - javascript
-show: 'true'
+show: true
 author: trishul
 ---
 
